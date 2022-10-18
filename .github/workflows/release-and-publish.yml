@@ -1,0 +1,41 @@
+name: Release
+on:
+  push:
+    branches:
+      - release
+jobs:
+  release-and-publish:
+    name: Release and publish
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 16
+      - name: Get yarn cache directory path
+        id: yarn-cache-dir-path
+        run: echo "dir=$(yarn cache dir)" >> $GITHUB_OUTPUT
+      - uses: actions/cache@v3
+        id: yarn-cache
+        with:
+          path: ${{ steps.yarn-cache-dir-path.outputs.dir }}
+          key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-yarn-
+      - name: Install dependencies
+        run: yarn install
+      - name: Semantic release
+        uses: cycjimmy/semantic-release-action@v2
+        id: semantic_release
+        with:
+          semantic_version: 17.4.2
+          extra_plugins: |
+            @semantic-release/changelog@5.0.1
+            @semantic-release/git@9.0.0
+        env:
+          GITHUB_TOKEN: ${{ secrets.NPM_CI_TOKEN }}
+          NPM_TOKEN: ${{ secrets.GH_CI_TOKEN }}

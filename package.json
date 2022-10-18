@@ -1,0 +1,57 @@
+{
+  "name": "@elibol/eslint-config",
+  "version": "1.0.0",
+  "description": "Prettier and ESLint configuration for JavaScript & Vue projects",
+  "author": "Onur Elibol",
+  "license": "MIT",
+  "homepage": "https://github.com/elibolonur/eslint-config#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elibolonur/eslint-config.git"
+  },
+  "bugs": {
+    "url": "https://github.com/elibolonur/eslint-config/issues"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "keywords": [
+    "elibol",
+    "code style",
+    "eslint",
+    "prettier",
+    "eslintconfig"
+  ],
+  "main": "index.js",
+  "files": [
+    "index.js",
+    "javascript.js",
+    "vue.js",
+    "config-variables.js",
+    "prettier.config.js"
+  ],
+  "scripts": {
+    "lint": "eslint . --fix --ignore-pattern node_modules",
+    "lint:fix": "eslint . --ignore-pattern node_modules",
+    "lint:debug": "eslint -c javascript.js --print-config \"**/*.js\" > ./eslint-debug.json"
+  },
+  "dependencies": {
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-sort-imports-es6-autofix": "^0.6.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.25.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-vue": "^9.6.0",
+    "prettier": "^2.7.1"
+  },
+  "peerDependencies": {
+    "eslint": "^8.25.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-vue": "^9.6.0",
+    "prettier": "^2.7.1"
+  }
+}
