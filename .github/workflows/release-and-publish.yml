@@ -5,7 +5,7 @@ on:
       - main
 jobs:
   release-and-publish:
-    name: Release and Rublish on NPM
+    name: Release & Publish on NPM
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
