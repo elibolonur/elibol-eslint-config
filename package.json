@@ -1,6 +1,6 @@
 {
   "name": "@elibol/eslint-config",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "Prettier and ESLint configuration for JavaScript & Vue projects",
   "author": "Onur Elibol",
   "license": "MIT",
