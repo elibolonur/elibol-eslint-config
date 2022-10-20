@@ -2,10 +2,10 @@ name: Release
 on:
   push:
     branches:
-      - release
+      - main
 jobs:
   release-and-publish:
-    name: Release and publish
+    name: Release and Rublish on NPM
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
