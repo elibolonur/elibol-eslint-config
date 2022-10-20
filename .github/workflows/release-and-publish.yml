@@ -29,7 +29,7 @@ jobs:
       - name: Install dependencies
         run: yarn install
       - name: Semantic release
-        uses: cycjimmy/semantic-release-action@v2
+        uses: cycjimmy/semantic-release-action@v3
         id: semantic_release
         with:
           semantic_version: 17.4.2
