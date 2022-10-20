@@ -35,7 +35,7 @@ module.exports = require('@elibol/eslint-config/prettier.config')
 
 <br />
 
-> **NOTE:** By default the package exports **Vue** configuration. So using `extends: ["@elibol/eslint-config"]` will by default include JavaScript and `eslint-plugin-vue` rules. If you want to use pure JavaScript rules see [Using JavaScript rules only](#javascript-rules-only)
+> **NOTE:** By default the package exports **Vue** configuration. So using `extends: ["@elibol/eslint-config"]` will by default include JavaScript and `eslint-plugin-vue` rules. If you want to use pure JavaScript rules see below.
 
 ## Using JavaScript rules only
 If you would only need to import JavaScript rules but not Vue, then you can use the package as following:
