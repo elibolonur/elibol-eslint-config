@@ -2,10 +2,10 @@ name: Release
 on:
   push:
     branches:
-      - release
+      - main
 jobs:
   release-and-publish:
-    name: Release and publish
+    name: Release and Rublish on NPM
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -37,5 +37,5 @@ jobs:
             @semantic-release/changelog@5.0.1
             @semantic-release/git@9.0.0
         env:
-          GITHUB_TOKEN: ${{ secrets.NPM_CI_TOKEN }}
-          NPM_TOKEN: ${{ secrets.GH_CI_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.CI_NPM_TOKEN }}
+          NPM_TOKEN: ${{ secrets.CI_GH_TOKEN }}
