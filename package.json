@@ -4,13 +4,13 @@
   "description": "Prettier and ESLint configuration for JavaScript & Vue projects",
   "author": "Onur Elibol",
   "license": "MIT",
-  "homepage": "https://github.com/elibolonur/eslint-config#readme",
+  "homepage": "https://github.com/elibolonur/elibol-eslint-config#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/elibolonur/eslint-config.git"
+    "url": "git+https://github.com/elibolonur/elibol-eslint-config.git"
   },
   "bugs": {
-    "url": "https://github.com/elibolonur/eslint-config/issues"
+    "url": "https://github.com/elibolonur/elibol-eslint-config/issues"
   },
   "publishConfig": {
     "access": "public"
