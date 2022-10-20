@@ -1,6 +1,5 @@
 module.exports = {
   branches: [{ name: 'main' }],
-  repositoryUrl: 'https://elibolonur@github.com/elibolonur/elibol-eslint-config.git',
   plugins: [
     [
       '@semantic-release/commit-analyzer',
