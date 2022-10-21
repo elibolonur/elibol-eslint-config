@@ -17,5 +17,8 @@ module.exports = {
     sourceType: 'module',
   },
   extends: ['@vue/eslint-config-typescript/recommended', vue],
-  rules: {},
+  rules: {
+    // Enforce adding file extensions for .vue and .js files when importing
+    'node/file-extension-in-import': ['error', 'always', { '.js': 'always', '.vue': 'always', '.ts': 'never' }],
+  },
 }
