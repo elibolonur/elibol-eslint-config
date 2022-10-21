@@ -1,3 +1,10 @@
+## [1.1.2](https://github.com/elibolonur/elibol-eslint-config/compare/v1.1.1...v1.1.2) (2022-10-21)
+
+
+### Bug Fixes
+
+* enforce .vue & .js extensions when importing for TypeScript ([7e594e9](https://github.com/elibolonur/elibol-eslint-config/commit/7e594e9adaf25832ecb6dd92cfb0662439013358))
+
 ## [1.1.1](https://github.com/elibolonur/elibol-eslint-config/compare/v1.1.0...v1.1.1) (2022-10-21)
 
 
