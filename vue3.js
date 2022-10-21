@@ -1,6 +1,6 @@
 /**
 |--------------------------------------------------
-| Vue.js specific rules
+| Vue.js config
 |--------------------------------------------------
 **/
 
@@ -9,8 +9,6 @@ const js = require.resolve('./javascript')
 const config = require('./config-variables')
 
 module.exports = {
-  // declare globals
-  globals: {},
   extends: ['plugin:vue/vue3-strongly-recommended', js],
   rules: {
     /* Naming rules*/
@@ -159,7 +157,7 @@ module.exports = {
     ],
     // NOTE: Disabled for now, has potential but not optimal for everyone
     // 'vue/no-undef-properties': 'error',
-    // Enforce Composition API
+    // To Enforce Composition API
     // 'vue/component-api-style': ['error', ['script-setup', 'composition', 'composition-vue2']],
   },
 }
