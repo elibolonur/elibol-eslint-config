@@ -28,7 +28,7 @@ npm install -D eslint prettier@^2.7.1 @elibol/eslint-config eslint-config-pretti
 
 <div id="default-usage" />
 
-#### Vue 2/3 (default config)
+### Vue 2/3 (default config)
 
 ```js
 // .eslintrc.js
@@ -42,7 +42,7 @@ module.exports = {
 
 <div id="usage-typescript" />
 
-#### Vue 3 &amp; TypeScript
+### Vue 3 &amp; TypeScript
 
 To be able to use **TypeScript** configuration, make sure to install dependencies below:
 
@@ -60,7 +60,7 @@ module.exports = {
 
 <div id="usage-javascript" />
 
-#### JavaScript only
+### JavaScript only
 
 If you would only need to import JavaScript rules but not Vue, then you can use the package as following:
 
@@ -74,7 +74,7 @@ If this is the scenario, you don't need to install `eslint-plugin-vue` either.
 
 <div id="usage-prettier" />
 
-#### Example prettier.config.js file
+### Example prettier.config.js file
 
 This package uses prettier by default. For the config to work properly, you need to inherit `prettier` rules from the project.
 
