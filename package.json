@@ -26,9 +26,10 @@
   "files": [
     "index.js",
     "javascript.js",
-    "vue.js",
-    "config-variables.js",
-    "prettier.config.js"
+    "vue3.js",
+    "vue3-typescript.js",
+    "prettier.config.js",
+    "config-variables.js"
   ],
   "scripts": {
     "lint": "eslint --ignore-pattern node_modules",
@@ -45,6 +46,10 @@
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-vue": "^9.6.0",
+    "typescript": "^4.8.4",
+    "vue-eslint-parser": "^9.1.0",
+    "@typescript-eslint/parser": "^5.40.1",
+    "@vue/eslint-config-typescript": "^11.0.2",
     "prettier": "^2.7.1"
   },
   "peerDependencies": {
