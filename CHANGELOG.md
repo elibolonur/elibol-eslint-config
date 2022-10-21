@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/elibolonur/elibol-eslint-config/compare/v1.0.0...v1.1.0) (2022-10-21)
+
+
+### Features
+
+* add typescript config for vue 3 ([2e364e6](https://github.com/elibolonur/elibol-eslint-config/commit/2e364e6178899723ba61748c3732961e80cbe438))
+
 # 1.0.0 (2022-10-20)
 
 
