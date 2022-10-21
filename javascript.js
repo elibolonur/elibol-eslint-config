@@ -1,6 +1,6 @@
 /**
 |--------------------------------------------------
-| JavaScript rules, inherits eslint:recommended
+| JavaScript config
 |--------------------------------------------------
 **/
 
