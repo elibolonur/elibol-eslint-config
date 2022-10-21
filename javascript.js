@@ -65,7 +65,7 @@ module.exports = {
       { blankLine: 'any', prev: 'directive', next: 'directive' },
     ],
     // Enforce not to add file extension in the end of the path for vue, js and ts files
-    'node/file-extension-in-import': ['error', 'always', { '.js': 'never', '.vue': 'never', '.ts': 'never' }],
+    'node/file-extension-in-import': ['error', 'always', { '.js': 'never', '.vue': 'always', '.ts': 'never' }],
     // Enforce not using deprecated API's
     'node/no-deprecated-api': 'error',
     'max-len': [
