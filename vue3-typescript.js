@@ -37,5 +37,6 @@ module.exports = {
   rules: {
     // Enforce adding file extensions for .vue and .js files when importing
     'node/file-extension-in-import': ['error', 'always', { '.js': 'always', '.vue': 'always', '.ts': 'never' }],
+    '@typescript-eslint/no-unused-vars': ['error', { vars: 'all', args: 'after-used', ignoreRestSiblings: true }],
   },
 }
