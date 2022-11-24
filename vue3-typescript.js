@@ -17,6 +17,23 @@ module.exports = {
     sourceType: 'module',
   },
   extends: ['@vue/eslint-config-typescript/recommended', vue],
+  overrides: [
+    // This rule to be disabled for ts and vue files since we use global types
+    {
+      files: ['*.ts', '*.vue'],
+      rules: {
+        'no-undef': 'off',
+      },
+    },
+    // rules for d.ts files
+    {
+      files: ['*.d.ts'],
+      rules: {
+        // we might need to use any in type files
+        '@typescript-eslint/no-explicit-any': 0,
+      },
+    },
+  ],
   rules: {
     // Enforce adding file extensions for .vue and .js files when importing
     'node/file-extension-in-import': ['error', 'always', { '.js': 'always', '.vue': 'always', '.ts': 'never' }],
